@@ -1,0 +1,227 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 32px 48px;
+    background: #20262f;
+    color: #ffffff;
+}
+
+.Header,
+.Layout,
+.Notice,
+.Error {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Header {
+    margin-bottom: 24px;
+}
+
+.Header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.Header p {
+    margin: 0;
+    color: #d6e4e2;
+    line-height: 1.5;
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 22px;
+    align-items: start;
+}
+
+.Card,
+.ResultCard,
+.HistoryCard,
+.Notice,
+.Error {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+}
+
+.Error {
+    margin-bottom: 16px;
+    background: #ffe2e2;
+    color: #7d1c1c;
+    font-weight: 700;
+}
+
+.TopControls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.TopControls label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.TopControls select {
+    border: 1px solid #c9d7d4;
+    border-radius: 6px;
+    padding: 10px;
+    font: inherit;
+}
+
+.Warning {
+    background: #fff4d8;
+    color: #6c4b00;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.Warning a {
+    color: #144C52;
+}
+
+.TemplateHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+.TemplateHeader h2 {
+    margin: 0;
+    color: #144C52;
+}
+
+.TemplateHeader p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.Disclaimer,
+.SmallText {
+    background: #eef7f5;
+    color: #38524e;
+    border-radius: 8px;
+    padding: 12px;
+    line-height: 1.5;
+}
+
+.Question {
+    border-top: 1px solid #e5eeee;
+    padding: 18px 0;
+}
+
+.Question h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.Options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Options button,
+.SubmitButton,
+.ResultCard button {
+    border: 0;
+    border-radius: 6px;
+    background: #e8eeee;
+    color: #20262f;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.Options button.Selected {
+    background: #144C52;
+    color: #ffffff;
+}
+
+.SubmitButton,
+.ResultCard button {
+    background: #144C52;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.SubmitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.SidePanel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ResultCard h2,
+.HistoryCard h2 {
+    margin: 12px 0;
+    color: #144C52;
+}
+
+.Band,
+.HistoryBand {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 6px 10px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.Low {
+    background: #237a39;
+}
+
+.Moderate {
+    background: #b06b00;
+}
+
+.High {
+    background: #a32d2d;
+}
+
+.HistoryItem {
+    border-top: 1px solid #e5eeee;
+    padding: 12px 0;
+}
+
+.HistoryItem strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.HistoryItem p {
+    margin: 4px 0;
+    color: #4c5965;
+}
+
+.HistoryItem small {
+    color: #6d7a85;
+}
+
+.HistoryBand {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+@media (max-width: 950px) {
+    .Layout {
+        grid-template-columns: 1fr;
+    }
+}

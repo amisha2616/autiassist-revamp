@@ -1,0 +1,151 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 32px 48px;
+    background: #20262f;
+    color: #ffffff;
+}
+
+.Header,
+.Layout {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.Header {
+    margin-bottom: 24px;
+}
+
+.Header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.Header p {
+    margin: 0;
+    color: #d6e4e2;
+    line-height: 1.5;
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 380px) 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.Card,
+.ProfileCard,
+.Empty {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+}
+
+.Card h2,
+.ListHeader h2,
+.ProfileCard h3 {
+    margin: 0 0 12px;
+    color: #144C52;
+}
+
+.Card label {
+    display: block;
+    font-weight: 700;
+    margin: 14px 0 6px;
+}
+
+.Card input,
+.Card select,
+.Card textarea {
+    width: 100%;
+    border: 1px solid #c9d7d4;
+    border-radius: 6px;
+    padding: 10px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.Card button,
+.ProfileCard button,
+.ListHeader a {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    background: #144C52;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Card button {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.Card button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.ListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.ProfileCard {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.ProfileCard p {
+    margin: 4px 0;
+    color: #4c5965;
+}
+
+.ProfileCard button {
+    align-self: flex-start;
+    background: #8d2b2b;
+}
+
+.Notes {
+    margin-top: 10px !important;
+    padding-top: 10px;
+    border-top: 1px solid #e5eeee;
+}
+
+.Error,
+.Success {
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.Error {
+    background: #ffe2e2;
+    color: #7d1c1c;
+}
+
+.Success {
+    background: #ddf7e3;
+    color: #145c2c;
+}
+
+@media (max-width: 850px) {
+    .Layout {
+        grid-template-columns: 1fr;
+    }
+
+    .ProfileCard {
+        flex-direction: column;
+    }
+}

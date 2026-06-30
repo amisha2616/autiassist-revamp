@@ -38,6 +38,10 @@ app.get('/api/health', (req, res) => {
 // Authentication and role routes.
 app.use('/api/auth', require('./routes/auth'));
 
+// Profile and saved screening APIs.
+app.use('/api/profiles', require('./routes/profiles'));
+app.use('/api/assessment-sessions', require('./routes/assessmentSessions'));
+
 // New unified quiz API for the revamp.
 app.use('/api/game-questions', require('./routes/gameQuestions'));
 

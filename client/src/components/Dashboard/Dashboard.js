@@ -30,6 +30,11 @@ class Dashboard extends Component {
 
                 <section className={classes.Grid}>
                     <div className={classes.Card}>
+                        <h2>Child profiles</h2>
+                        <p>Create child profiles so screenings and future progress tracking are saved properly.</p>
+                        <Link to="/profiles">Manage profiles</Link>
+                    </div>
+                    <div className={classes.Card}>
                         <h2>Emotion games</h2>
                         <p>Practice image, audio, and video-based emotion recognition activities.</p>
                         <Link to="/levels">Open games</Link>
@@ -38,7 +43,7 @@ class Dashboard extends Component {
                     <div className={classes.Card}>
                         <h2>Screening support</h2>
                         <p>Use the caregiver questionnaire for a non-diagnostic risk summary.</p>
-                        <Link to="/questionarie">Open screening</Link>
+                        <Link to="/screening/new">Start saved screening</Link>
                     </div>
 
                     <div className={classes.Card}>

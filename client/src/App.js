@@ -21,6 +21,8 @@ import blog from './components/Blog/blog';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Dashboard from './components/Dashboard/Dashboard';
+import Profiles from './components/Profiles/Profiles';
+import Screening from './components/Screening/Screening';
 import './App.css';
 
 class App extends Component {
@@ -62,6 +64,8 @@ class App extends Component {
                 <Route path="/login" exact component={Login} />
                 <Route path="/register" exact component={Register} />
                 <ProtectedRoute path="/dashboard" exact component={Dashboard} />
+                <ProtectedRoute path="/profiles" exact component={Profiles} />
+                <ProtectedRoute path="/screening/new" exact component={Screening} />
                 <Route path="/levels" exact component={LevelScreen} />
                 <Route path="/level1" exact component={Level1} />
                 <Route path="/level2" exact component={Level2} />
