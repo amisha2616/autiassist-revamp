@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const GameQuestion = require('../models/gameQuestion');
+const { requireAuth, requireRole } = require('../middleware/auth');
 
 const mediaTypeByLevel = {
   1: 'image',
@@ -50,7 +51,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', requireAuth, requireRole('admin'), async (req, res) => {
   try {
     const question = await GameQuestion.create(normalizeQuestionPayload(req.body));
     res.status(201).json(question);
@@ -59,7 +60,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', requireAuth, requireRole('admin'), async (req, res) => {
   try {
     const question = await GameQuestion.findByIdAndUpdate(
       req.params.id,
@@ -77,7 +78,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', requireAuth, requireRole('admin'), async (req, res) => {
   try {
     const question = await GameQuestion.findByIdAndDelete(req.params.id);
 

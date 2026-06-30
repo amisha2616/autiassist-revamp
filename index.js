@@ -35,6 +35,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Authentication and role routes.
+app.use('/api/auth', require('./routes/auth'));
+
 // New unified quiz API for the revamp.
 app.use('/api/game-questions', require('./routes/gameQuestions'));
 

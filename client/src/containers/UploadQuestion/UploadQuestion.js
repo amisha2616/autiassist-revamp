@@ -127,8 +127,8 @@ class UploadQuestion extends Component {
                 this.setState({ question: '', hostedURL: '' });
             })
             .catch(err => {
-                const message = err.response && err.response.data && err.response.data.error
-                    ? err.response.data.error
+                const message = err.response && err.response.data && (err.response.data.message || err.response.data.error)
+                    ? (err.response.data.message || err.response.data.error)
                     : 'Unable to add question.';
                 this.responseHandler(message, 'Danger');
             });

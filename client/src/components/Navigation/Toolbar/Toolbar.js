@@ -10,13 +10,12 @@ const toolbar = props => {
                 <div>
                     <DrawerToggle icon={props.show} click={props.drawerClickHandler} />
                 </div>
-                <div className={classes.Toolbar__Logo}><a href="/">AUTISMO</a></div>
+                <div className={classes.Toolbar__Logo}><a href="/">AUTIASSIST</a></div>
                 <div className={classes.Spacer}></div>
                 <NavigationItems />
             </nav>
         </div>
     )
 }
-
 
 export default toolbar;

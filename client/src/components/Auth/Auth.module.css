@@ -1,0 +1,83 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 16px 48px;
+    background: #20262f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.Card h1 {
+    margin: 0 0 8px;
+    color: #144C52;
+}
+
+.HelpText {
+    margin: 0 0 22px;
+    line-height: 1.5;
+    color: #4c5965;
+}
+
+.Form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.Form input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5dd;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.Button {
+    width: 100%;
+    min-height: 42px;
+    border: 0;
+    border-radius: 6px;
+    background: #144C52;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.Error {
+    background: #ffe9ef;
+    color: #b0002f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.FooterText {
+    margin-top: 18px;
+    text-align: center;
+    color: #4c5965;
+}
+
+.FooterText a {
+    color: #144C52;
+    font-weight: 700;
+}

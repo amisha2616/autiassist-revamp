@@ -42,3 +42,16 @@
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+.NavButton {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+.NavButton:hover {
+    text-decoration: underline;
+}
