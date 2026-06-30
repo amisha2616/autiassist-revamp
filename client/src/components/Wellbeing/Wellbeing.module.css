@@ -1,0 +1,300 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 32px 48px;
+    background: #20262f;
+    color: #ffffff;
+}
+
+.Header {
+    max-width: 1100px;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.Header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.Header p,
+.HelperText {
+    margin: 0;
+    color: #d6e4e2;
+    line-height: 1.5;
+}
+
+.Header a,
+.EmptyState a,
+.Card button {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    background: #144C52;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.Card,
+.Panel,
+.EmptyState,
+.Filters {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+}
+
+.Card h2,
+.Panel h2,
+.EmptyState h2 {
+    margin: 0 0 10px;
+    color: #144C52;
+}
+
+.Card .HelperText,
+.Panel .HelperText {
+    color: #4c5965;
+    margin-bottom: 16px;
+}
+
+.Card label,
+.Filters label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #144C52;
+}
+
+.Card input,
+.Card select,
+.Card textarea,
+.Filters select {
+    width: 100%;
+    border: 1px solid #c6d5d2;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.Card textarea {
+    resize: vertical;
+}
+
+.Card button {
+    margin-top: 18px;
+}
+
+.Card button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.SummaryGrid {
+    max-width: 1100px;
+    margin: 0 auto 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.SummaryCard {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.SummaryCard span,
+.SummaryCard small {
+    display: block;
+    color: #4c5965;
+    font-size: 13px;
+}
+
+.SummaryCard strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 26px;
+    color: #144C52;
+    text-transform: capitalize;
+}
+
+.Filters {
+    max-width: 1100px;
+    margin: 0 auto 18px;
+}
+
+.Filters label {
+    margin-top: 0;
+}
+
+.Panel {
+    margin-bottom: 18px;
+}
+
+.TrendList {
+    margin-top: 16px;
+    display: grid;
+    gap: 10px;
+}
+
+.TrendRow {
+    display: grid;
+    grid-template-columns: 110px 1fr 54px;
+    gap: 12px;
+    align-items: center;
+    color: #4c5965;
+    font-size: 14px;
+}
+
+.BarTrack {
+    height: 12px;
+    background: #e8efee;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.BarFill {
+    height: 100%;
+    background: #144C52;
+    border-radius: 999px;
+}
+
+.LogList {
+    display: grid;
+    gap: 14px;
+}
+
+.LogCard {
+    border: 1px solid #e2ecea;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.LogTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.LogTop h3 {
+    margin: 0 0 4px;
+    color: #144C52;
+}
+
+.LogTop p,
+.LogCard p {
+    margin: 0 0 8px;
+    color: #4c5965;
+    line-height: 1.5;
+}
+
+.ScorePill {
+    border-radius: 999px;
+    background: #e8efee;
+    color: #144C52;
+    padding: 8px 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.MetricGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.MetricGrid span {
+    background: #f4f7f7;
+    color: #30404a;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.Notes {
+    background: #f4f7f7;
+    border-left: 4px solid #144C52;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
+.DeleteButton {
+    border: 0;
+    border-radius: 6px;
+    background: #f00946;
+    color: #ffffff;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.EmptyState {
+    max-width: 1100px;
+    margin: 0 auto 18px;
+}
+
+.EmptyState p {
+    color: #4c5965;
+    line-height: 1.5;
+}
+
+.Error,
+.Success {
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+.Error {
+    background: #ffe9ee;
+    color: #a0002c;
+}
+
+.Success {
+    background: #e8f6f2;
+    color: #144C52;
+}
+
+@media (max-width: 850px) {
+    .Header,
+    .Layout {
+        display: block;
+    }
+
+    .Header a {
+        margin-top: 14px;
+    }
+
+    .Card {
+        margin-bottom: 18px;
+    }
+
+    .TrendRow {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}

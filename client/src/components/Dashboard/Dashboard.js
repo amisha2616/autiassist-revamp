@@ -47,6 +47,13 @@ class Dashboard extends Component {
                         <Link to="/game-progress">View game progress</Link>
                     </div>
 
+
+                    <div className={classes.Card}>
+                        <h2>Wellbeing tracker</h2>
+                        <p>Record sleep, sensory load, mood, communication, triggers, and helpful strategies.</p>
+                        <Link to="/wellbeing">Open wellbeing tracker</Link>
+                    </div>
+
                     <div className={classes.Card}>
                         <h2>Screening support</h2>
                         <p>Use the caregiver questionnaire for a non-diagnostic risk summary.</p>
