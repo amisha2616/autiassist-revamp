@@ -41,6 +41,7 @@ app.use('/api/auth', require('./routes/auth'));
 // Profile and saved screening APIs.
 app.use('/api/profiles', require('./routes/profiles'));
 app.use('/api/assessment-sessions', require('./routes/assessmentSessions'));
+app.use('/api/game-attempts', require('./routes/gameAttempts'));
 
 // New unified quiz API for the revamp.
 app.use('/api/game-questions', require('./routes/gameQuestions'));

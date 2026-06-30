@@ -40,6 +40,13 @@ class Dashboard extends Component {
                         <Link to="/levels">Open games</Link>
                     </div>
 
+
+                    <div className={classes.Card}>
+                        <h2>Game progress</h2>
+                        <p>Review saved emotion-game attempts, accuracy trends, and recent practice history.</p>
+                        <Link to="/game-progress">View game progress</Link>
+                    </div>
+
                     <div className={classes.Card}>
                         <h2>Screening support</h2>
                         <p>Use the caregiver questionnaire for a non-diagnostic risk summary.</p>

@@ -1,0 +1,223 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 32px 48px;
+    background: #20262f;
+    color: #ffffff;
+}
+
+.Header {
+    max-width: 1080px;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.Header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.Header p {
+    margin: 0;
+    color: #d6e4e2;
+    line-height: 1.5;
+}
+
+.Header a,
+.EmptyState a {
+    display: inline-block;
+    border-radius: 8px;
+    background: #ADD2C9;
+    color: #20262f;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 11px 16px;
+}
+
+.Filters {
+    max-width: 1080px;
+    margin: 0 auto 18px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.Filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 800;
+    color: #144C52;
+}
+
+.Filters select {
+    min-width: 220px;
+    border: 1px solid #ADD2C9;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 15px;
+}
+
+.SummaryGrid {
+    max-width: 1080px;
+    margin: 0 auto 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+}
+
+.SummaryCard,
+.Panel,
+.EmptyState,
+.ErrorBox {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+}
+
+.SummaryCard span {
+    display: block;
+    color: #4c5965;
+    margin-bottom: 8px;
+}
+
+.SummaryCard strong {
+    display: block;
+    color: #144C52;
+    font-size: 34px;
+}
+
+.Panel,
+.EmptyState,
+.ErrorBox {
+    max-width: 1080px;
+    margin: 0 auto 18px;
+}
+
+.Panel h2,
+.EmptyState h2 {
+    margin: 0 0 14px;
+    color: #144C52;
+}
+
+.LevelRows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.LevelRow {
+    display: grid;
+    grid-template-columns: 90px 1fr 260px;
+    gap: 14px;
+    align-items: center;
+}
+
+.LevelTitle {
+    font-weight: 800;
+    color: #144C52;
+}
+
+.BarTrack {
+    height: 14px;
+    border-radius: 999px;
+    background: #e6eeee;
+    overflow: hidden;
+}
+
+.BarFill {
+    height: 100%;
+    border-radius: 999px;
+    background: #144C52;
+    transition: width 0.3s ease;
+}
+
+.LevelStats {
+    color: #4c5965;
+    font-size: 14px;
+}
+
+.AttemptList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.AttemptCard {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    gap: 12px;
+    border: 1px solid #e1eeee;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.AttemptCard h3 {
+    margin: 0 0 6px;
+    color: #144C52;
+}
+
+.AttemptCard p {
+    margin: 0;
+    color: #4c5965;
+}
+
+.AttemptStats {
+    text-align: right;
+}
+
+.AttemptStats span,
+.AttemptStats strong {
+    display: block;
+}
+
+.AttemptStats strong {
+    margin-top: 6px;
+    color: #144C52;
+    font-size: 28px;
+}
+
+.AttemptMeta {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #4c5965;
+    font-size: 14px;
+}
+
+.EmptyState p {
+    color: #4c5965;
+    line-height: 1.5;
+}
+
+.ErrorBox {
+    border-left: 5px solid #f00946;
+}
+
+@media (max-width: 760px) {
+    .Page {
+        padding: 84px 16px 32px;
+    }
+
+    .Header {
+        flex-direction: column;
+    }
+
+    .LevelRow,
+    .AttemptCard {
+        grid-template-columns: 1fr;
+    }
+
+    .AttemptStats {
+        text-align: left;
+    }
+}

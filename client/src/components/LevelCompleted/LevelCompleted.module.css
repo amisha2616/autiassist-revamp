@@ -24,8 +24,6 @@
     height: 100px;
     width: 100px;
     margin: 20px;
-    /* animation-name: fadeIn;
-    animation-duration: 5s; */
     animation: zoomInOut 2s;
 }
 
@@ -45,12 +43,37 @@
     width: 375px;
 }
 
-.ScoreContainer {
+.ScoreContainer,
+.AccuracyContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 40px;
+}
+
+.AccuracyContainer {
+    margin-top: 8px;
+    font-size: 24px;
+    color: #144C52;
+    font-weight: 700;
+}
+
+.SaveNotice {
+    width: min(720px, calc(100% - 32px));
+    margin: 20px auto 0;
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.SaveNotice a {
+    color: #144C52;
+    text-decoration: underline;
 }
 
 @keyframes zoomInOut {
@@ -62,28 +85,6 @@
     }
     100% {
         transform: scale(1, 1);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        left: -200px;
-    }
-    100% {
-        opacity: 1;
-        left: 0px;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        left: 0px;
-    }
-    100% {
-        opacity: 0;
-        left: 200px;
     }
 }
 
