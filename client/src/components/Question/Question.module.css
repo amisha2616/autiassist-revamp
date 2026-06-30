@@ -1,0 +1,9 @@
+.QuestionFile {
+    height: 250px;
+    width: 250px;
+}
+
+.QuestionFile div{
+    height: auto !important;
+    width: 100% !important;
+}

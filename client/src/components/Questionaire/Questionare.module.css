@@ -1,0 +1,188 @@
+.Questionare {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.BarContainer {
+    width: 250px;
+    border-radius: 4px;
+    background-color: gainsboro;
+    position: absolute;
+    height: 10px;
+    top: 70px;
+}
+
+.ProgressBar {
+    max-width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    height: 10px;
+    transition: all 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.ScoreContainer {
+    background-color: #5EA3A3;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid #ADD2C9;
+    position: absolute;
+    top: 80px;
+    right: 250px;
+    box-shadow: 2px 3px 5px #000000;
+}
+
+.QuestionContainer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+}
+
+Question {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+Question img {
+    height: inherit;
+    width: inherit;
+}
+
+audio {
+    width: 100%;
+}
+
+/* .OptionsContainer {} */
+
+.RowContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dummy {
+    height: 50px;
+    width: 100%;
+}
+
+.NextButtonContainer {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1600px) {
+    .BarContainer {
+        width: 420px;
+    }
+}
+
+/* 
+@media (max-width: 1440px) {
+    .BarContainer {
+        width: 420px;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .BarContainer {
+        width: 400px;
+    }
+    .ScoreContainer {
+        right: 150px;
+        top: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BarContainer {
+        width: 420px;
+    }
+    .ScoreContainer {
+        padding: 12px 25px;
+        font-size: 35px;
+        right: 60px;
+        top: 90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .OptionsContainer {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 540px) {
+    .ScoreContainer {
+        top: 90px;
+        padding: 7px 17px;
+        font-size: 22px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 426px) {
+    .BarContainer {
+        width: 240px;
+    }
+    .RowContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .OptionsContainer {
+        margin-top: -30px;
+    }
+    .ScoreContainer {
+        padding: 5px 15px;
+        font-size: 22px;
+        right: 20px;
+    }
+    /* .QuestionContainer {
+        height: 160px;
+    } */
+}
+
+@media (max-width: 376px) {
+    .BarContainer {
+        top: 87px;
+        width: 230px;
+    }
+    .RowContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .ScoreContainer {
+        padding: 6px 15px;
+        font-size: 22px;
+        top: 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    .RowContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .BarContainer {
+        width: 200px;
+    }
+    .ScoreContainer {
+        padding: 5px 15px;
+        font-size: 22px;
+        top: 70px;
+    }
+}

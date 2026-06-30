@@ -1,0 +1,36 @@
+.Toolbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    background-color: #245953;
+    z-index: 200;
+}
+
+.Toolbar__Navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+}
+
+.Toolbar__Logo {
+    margin-left: 1rem;
+}
+
+.Toolbar__Logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.Spacer {
+    flex: 1;
+}
+
+@media (min-width: 769px) {
+    .Toolbar__Logo {
+        margin-left: 0;
+    }
+}

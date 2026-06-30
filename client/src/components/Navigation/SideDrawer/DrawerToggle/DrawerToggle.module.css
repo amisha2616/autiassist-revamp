@@ -1,0 +1,22 @@
+.ToggleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ToggleButton:focus {
+    outline: none;
+}
+
+@media (min-width: 769px) {
+    .ToggleButton {
+        display: none;
+    }
+}

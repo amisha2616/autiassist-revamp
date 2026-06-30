@@ -1,0 +1,92 @@
+.Btn {
+    padding: 8px 2px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.PrimaryBtn {
+    background-color: #ffffff;
+    color: #242424;
+    border: 1px solid #ffffff;
+}
+
+.OutlineBtn {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+.MediumBtn {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.LargeBtn {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.MobileBtn {
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+.WideBtn {
+    padding: 12px 64px;
+    font-size: 20px;
+}
+
+.LargeBtn:hover, .MediumBtn:hover, .MobileBtn:hover {
+    transition: all 0.3s ease-out;
+    background-color: #ffffff;
+    color: #242424;
+}
+
+.WideBtn:hover {
+    color: #ffffff;
+    background-color: #f00946;
+    transition: all 0.2s ease-out;
+}
+
+.PrimaryClr {
+    background-color: #242424;
+    color: #ffffff;
+    border: none;
+}
+
+.PrimaryClr:hover {
+    background-color: #ffffff;
+    color: #242424;
+    border: none;
+}
+
+.BlueClr {
+    background-color: #144C52;
+    color: #ffffff;
+    border: none;
+}
+
+.RedClr {
+    background-color: #f00946;
+    color: #ffffff;
+    border: none;
+}
+
+.GreenClr {
+    background-color: #24ce4a;
+    color: #ffffff;
+    border: none;
+}

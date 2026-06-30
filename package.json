@@ -1,0 +1,32 @@
+{
+  "name": "autiassist-revamp-starter",
+  "version": "1.0.0",
+  "description": "Restored and upgraded starter for the AUTISMO/AutiAssist MERN autism support project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install --legacy-peer-deps && npm install --prefix client --legacy-peer-deps",
+    "seed": "node scripts/seedGameQuestions.js",
+    "check:setup": "node scripts/checkSetup.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "concurrently": "^5.3.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "latest-version": "^7.0.0",
+    "mongoose": "^5.13.22",
+    "mongoose-type-url": "^2.1.0",
+    "react-hot-loader": "^4.13.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

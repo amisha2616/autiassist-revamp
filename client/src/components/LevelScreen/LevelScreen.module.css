@@ -1,0 +1,134 @@
+.PageContent {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.circle_green {
+    background: #00a198;
+    width: 11.5rem;
+    height: 11.5rem;
+    position: relative;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.LevelScreen_Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 70px;
+    padding: 10px 0;
+    color: #080808;
+    background-color: #ADD2C9;
+}
+
+.LevelScreen_Container, .LevelBtns_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.LevelScreen_Container {
+    margin-top: 60px;
+}
+
+.LevelBtns_Container button {
+    margin: 0 70px;
+}
+
+.BtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.LevelScreen_Container img {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .LevelScreen_Container img {
+        height: 170px;
+        width: 170px;
+    }
+    .LevelBtns_Container button {
+        margin: 0 35px;
+        /* width: 85px; */
+    }
+}
+
+@media (max-width: 540px) {
+    .LevelBtns_Container button {
+        margin: 0 30px;
+        width: 85px;
+    }
+}
+
+@media (max-width: 541px) {
+    .LevelScreen_Container img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .LevelBtns_Container {
+        display: none;
+    }
+    .LevelScreen_Header {
+        font-size: 70px;
+    }
+    .LevelScreen_Container {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .BtnContainer {
+        margin-top: 20px;
+    }
+    .LevelScreen_Container img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .LevelScreen_Header {
+        font-size: 70px;
+    }
+    .LevelScreen_Container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .BtnContainer {
+        margin-top: 20px;
+    }
+    .LevelScreen_Container img {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .LevelScreen_Header {
+        font-size: 70px;
+    }
+    .LevelScreen_Container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .BtnContainer {
+        margin-top: 40px;
+    }
+    .LevelScreen_Container img {
+        height: 80px;
+        width: 80px;
+    }
+}
+

@@ -1,0 +1,178 @@
+.LevelCompleted {
+    margin-top: 56px;
+}
+
+.LevelCompleteHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    width: auto;
+    color: #000000;
+    background-color: #ADD2C9;
+    padding: 20px;
+}
+
+.StarsContainer, .ButtonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Star1 img, .Star2 img, .Star3 img {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    /* animation-name: fadeIn;
+    animation-duration: 5s; */
+    animation: zoomInOut 2s;
+}
+
+.ButtonsContainer button {
+    margin: 20px 10px 10px 10px;
+}
+
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ImageContainer img {
+    height: 320px;
+    width: 375px;
+}
+
+.ScoreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        left: -200px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .LevelCompleteHeader {
+        font-size: 55px;
+    }
+    .Star1 img, .Star2 img, .Star3 img {
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+    }
+    .ScoreContainer {
+        font-size: 35px;
+    }
+    .ImageContainer img {
+        height: 280px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .LevelCompleteHeader {
+        font-size: 65px;
+    }
+    .Star1 img, .Star2 img, .Star3 img {
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+    }
+    .ScoreContainer {
+        font-size: 35px;
+    }
+    .ImageContainer img {
+        height: 175px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .LevelCompleteHeader {
+        font-size: 55px;
+    }
+    .Star1 img, .Star2 img, .Star3 img {
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+    }
+    .ScoreContainer {
+        font-size: 35px;
+    }
+    .ImageContainer img {
+        height: 200px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .LevelCompleteHeader {
+        font-size: 45px;
+    }
+    .Star1 img, .Star2 img, .Star3 img {
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+    }
+    .ScoreContainer {
+        font-size: 35px;
+    }
+    .ImageContainer img {
+        height: 230px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .LevelCompleteHeader {
+        font-size: 45px;
+    }
+    .Star1 img, .Star2 img, .Star3 img {
+        height: 70px;
+        width: 70px;
+        margin: 10px;
+    }
+    .ScoreContainer {
+        font-size: 35px;
+    }
+    .ImageContainer img {
+        height: 240px;
+        width: 320px;
+    }
+}

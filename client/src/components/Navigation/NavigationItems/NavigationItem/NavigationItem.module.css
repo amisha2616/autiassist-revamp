@@ -1,0 +1,14 @@
+.Normal {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Normal:hover {
+    text-decoration: underline;
+    transition: 100ms;
+}
+
+.Selected {
+    color: #ffffff;
+    text-decoration: underline;
+}

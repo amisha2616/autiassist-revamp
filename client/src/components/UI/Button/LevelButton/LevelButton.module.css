@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+.LevelButton {
+    font-family: 'Fira Sans', sans-serif;
+    height: 230px;
+    width: 230px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    margin: 30px;
+    box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .LevelButton {
+        height: 200px;
+        width: 200px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 541px) {
+    .LevelButton {
+        height: 120px;
+        width: 120px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 426px) {
+    .LevelButton {
+        height: 120px;
+        width: 120px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 376px) {
+    .LevelButton {
+        height: 110px;
+        width: 110px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .LevelButton {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+}
