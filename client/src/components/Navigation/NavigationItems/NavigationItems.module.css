@@ -1,36 +1,49 @@
+.NavigationItems {
+  min-width: 0;
+}
+
 .NavigationItems ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  white-space: nowrap;
 }
 
 .NavigationItems li {
-    padding: 0 0.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .ButtonItem {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .NavButton {
-    background: transparent;
-    border: 0;
-    color: #ffffff;
-    cursor: pointer;
-    font: inherit;
-    font-weight: 700;
-    padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 8px 11px;
+  border-radius: 999px;
+  transition: background 0.18s ease, transform 0.18s ease;
 }
 
 .NavButton:hover {
-    text-decoration: underline;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
-    .NavigationItems {
-        display: none;
-    }
+@media (max-width: 1180px) {
+  .NavigationItems {
+    display: none;
+  }
 }

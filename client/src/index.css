@@ -1,43 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+:root {
+  --color-bg: #f4f7f6;
+  --color-bg-soft: #eaf3f1;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fbfa;
+  --color-text: #17212b;
+  --color-text-soft: #52616b;
+  --color-heading: #103f45;
+  --color-primary: #135c5f;
+  --color-primary-dark: #0d3f43;
+  --color-primary-soft: #dcefed;
+  --color-accent: #f36f45;
+  --color-accent-soft: #fff1ec;
+  --color-danger: #c73552;
+  --color-danger-soft: #ffe8ee;
+  --color-success: #1f8f5f;
+  --color-success-soft: #e7f8ef;
+  --color-warning: #a86900;
+  --color-warning-soft: #fff3d8;
+  --color-border: #d9e7e4;
+  --shadow-sm: 0 6px 18px rgba(15, 56, 61, 0.08);
+  --shadow-md: 0 14px 40px rgba(15, 56, 61, 0.14);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --toolbar-height: 64px;
+  --page-width: 1180px;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-  height: auto;
+  min-height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  height: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100%;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(19, 92, 95, 0.14), transparent 32rem),
+    linear-gradient(180deg, #f9fcfb 0%, var(--color-bg) 42%, #eef6f4 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #f8f9fa; */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(243, 111, 69, 0.35);
+  outline-offset: 3px;
+}
+
+img,
+video {
+  max-width: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/*
-    -blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #852EFF;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #C6FF00;
-    --teal: #74FFDF;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #C6FF00;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40; 
- */
+::selection {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}

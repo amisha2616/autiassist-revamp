@@ -225,3 +225,157 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* UI_REFRESH_START */
+.Page {
+  min-height: calc(100vh - var(--toolbar-height));
+  padding: calc(var(--toolbar-height) + 44px) clamp(16px, 4vw, 40px) 56px;
+  background: radial-gradient(circle at top right, rgba(19, 92, 95, 0.12), transparent 28rem), var(--color-bg);
+  color: var(--color-text);
+}
+
+.Header,
+.Layout,
+.Notice,
+.Error,
+.Controls,
+.EmptyState,
+.Filters,
+.SummaryGrid,
+.Panel {
+  max-width: var(--page-width);
+}
+
+.Header h1,
+.EmptyState h1 {
+  color: var(--color-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.Header p,
+.EmptyState p,
+.HelperText {
+  color: var(--color-text-soft);
+  line-height: 1.65;
+}
+
+.Card,
+.ProfileCard,
+.ResultCard,
+.HistoryCard,
+.SummaryCard,
+.Panel,
+.EmptyState,
+.Filters,
+.Controls,
+.ReportPaper,
+.SavedReports,
+.Notice {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.Card h2,
+.Card h3,
+.ProfileCard h3,
+.ListHeader h2,
+.ResultCard h2,
+.HistoryCard h2,
+.Panel h2,
+.EmptyState h2,
+.SavedReports h2,
+.ReportSection h2,
+.ReportHeader h1,
+.TemplateHeader h2 {
+  color: var(--color-heading);
+}
+
+.Card p,
+.ProfileCard p,
+.HistoryItem p,
+.Panel p,
+.EmptyState p,
+.SavedReports p,
+.ReportSection p,
+.LogCard p,
+.LogTop p,
+.SummaryCard span,
+.SummaryCard small,
+.LevelStats,
+.AttemptCard p,
+.AttemptMeta {
+  color: var(--color-text-soft);
+}
+
+.Card input,
+.Card select,
+.Card textarea,
+.TopControls select,
+.Filters select,
+.Controls select,
+.Controls input {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+  min-height: 44px;
+}
+
+.Card button,
+.ProfileCard button,
+.ListHeader a,
+.SubmitButton,
+.ResultCard button,
+.Header a,
+.EmptyState a,
+.Controls button,
+.Controls a,
+.SavedReport button {
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 900;
+  border: 0;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.Card button:hover,
+.ProfileCard button:hover,
+.ListHeader a:hover,
+.SubmitButton:hover,
+.ResultCard button:hover,
+.Header a:hover,
+.EmptyState a:hover,
+.Controls button:hover,
+.Controls a:hover,
+.SavedReport button:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary-dark);
+}
+
+.Error {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.Success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.Warning,
+.Disclaimer {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+@media (max-width: 760px) {
+  .Page {
+    padding: calc(var(--toolbar-height) + 28px) 14px 36px;
+  }
+}
+/* UI_REFRESH_END */

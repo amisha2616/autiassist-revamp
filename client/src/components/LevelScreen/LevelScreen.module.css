@@ -1,134 +1,87 @@
 .PageContent {
-    margin-top: 56px;
-    margin-bottom: 56px;
+  min-height: calc(100vh - var(--toolbar-height));
+  margin-top: var(--toolbar-height);
+  padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 40px);
+  background: var(--color-bg);
 }
 
 .circle_green {
-    background: #00a198;
-    width: 11.5rem;
-    height: 11.5rem;
-    position: relative;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+  background: var(--color-primary-soft);
+  width: 11rem;
+  height: 11rem;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .LevelScreen_Header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 70px;
-    padding: 10px 0;
-    color: #080808;
-    background-color: #ADD2C9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(var(--page-width), 100%);
+  margin: 0 auto;
+  font-size: clamp(2.1rem, 6vw, 4.5rem);
+  font-weight: 950;
+  letter-spacing: -0.05em;
+  padding: 26px;
+  color: var(--color-heading);
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
 }
 
-.LevelScreen_Container, .LevelBtns_Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.LevelScreen_Container,
+.LevelBtns_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(var(--page-width), 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .LevelScreen_Container {
-    margin-top: 60px;
+  margin-top: 42px;
+  gap: clamp(24px, 5vw, 70px);
+  flex-wrap: wrap;
+}
+
+.LevelBtns_Container {
+  gap: clamp(20px, 7vw, 120px);
+  margin-top: 22px;
 }
 
 .LevelBtns_Container button {
-    margin: 0 70px;
+  margin: 0;
 }
 
 .BtnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 42px;
 }
 
 .LevelScreen_Container img {
-    height: 200px;
-    width: 200px;
+  height: clamp(120px, 20vw, 220px);
+  width: clamp(120px, 20vw, 220px);
+  object-fit: contain;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
 }
 
-@media (max-width: 768px) {
-    .LevelScreen_Container img {
-        height: 170px;
-        width: 170px;
-    }
-    .LevelBtns_Container button {
-        margin: 0 35px;
-        /* width: 85px; */
-    }
-}
+@media screen and (max-width: 520px) {
+  .LevelBtns_Container {
+    display: none;
+  }
 
-@media (max-width: 540px) {
-    .LevelBtns_Container button {
-        margin: 0 30px;
-        width: 85px;
-    }
+  .LevelScreen_Container {
+    flex-direction: column;
+  }
 }
-
-@media (max-width: 541px) {
-    .LevelScreen_Container img {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .LevelBtns_Container {
-        display: none;
-    }
-    .LevelScreen_Header {
-        font-size: 70px;
-    }
-    .LevelScreen_Container {
-        margin-top: 50px;
-        flex-direction: column;
-    }
-    .BtnContainer {
-        margin-top: 20px;
-    }
-    .LevelScreen_Container img {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .LevelScreen_Header {
-        font-size: 70px;
-    }
-    .LevelScreen_Container {
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .BtnContainer {
-        margin-top: 20px;
-    }
-    .LevelScreen_Container img {
-        height: 90px;
-        width: 90px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .LevelScreen_Header {
-        font-size: 70px;
-    }
-    .LevelScreen_Container {
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .BtnContainer {
-        margin-top: 40px;
-    }
-    .LevelScreen_Container img {
-        height: 80px;
-        width: 80px;
-    }
-}
-

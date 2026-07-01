@@ -1,57 +1,62 @@
 .SideDrawer {
-    background-color: #3F7B70;
-    height: 91.65%;
-    width: 70%;
-    max-width: 320px;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 56px;
-    left: 0;
-    z-index: 200;
-    transform: translateX(-120%);
-    transition: transform 0.3s ease-out;
+  background: linear-gradient(180deg, var(--color-primary-dark), #125458);
+  height: calc(100vh - var(--toolbar-height));
+  width: min(82vw, 330px);
+  box-shadow: 18px 0 45px rgba(9, 36, 39, 0.26);
+  position: fixed;
+  top: var(--toolbar-height);
+  left: 0;
+  z-index: 200;
+  transform: translateX(-110%);
+  transition: transform 0.26s ease-out;
+  padding: 18px;
+  overflow-y: auto;
 }
 
 .SideDrawer ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.2rem;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
 
 .SideDrawer li {
-    margin: 0.5rem 0;
+  margin: 0;
+}
+
+.SideDrawer li a {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 13px 14px;
+  border-radius: 14px;
 }
 
 .SideDrawer.Open {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .SideDrawer__Logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-left: -1rem;
-}
-
-.SideDrawer__Logo a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5rem;
+  display: none;
 }
 
 .NavButton {
-    background: transparent;
-    border: 0;
-    color: #ffffff;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 13px 14px;
+  text-align: left;
 }
 
 .NavButton:hover {
-    text-decoration: underline;
+  background: rgba(255, 255, 255, 0.16);
 }

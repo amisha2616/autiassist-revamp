@@ -1,3 +1,4 @@
-.Landing{
-    margin-top: 56px;
+.Landing {
+  margin-top: var(--toolbar-height);
+  background: var(--color-bg);
 }

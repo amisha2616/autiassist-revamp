@@ -419,3 +419,42 @@
         padding: 0;
     }
 }
+
+
+/* UI_REFRESH_START */
+.ReportPaper,
+.SavedReports {
+  border-radius: var(--radius-lg);
+}
+
+.SummaryCard,
+.DetailGrid div,
+.LevelCard,
+.NoteBox,
+.ListRow,
+.SavedReport {
+  border-color: var(--color-border);
+}
+
+.BandLow {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.BandModerate {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+.BandHigh {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+@media print {
+  .Page {
+    padding: 0;
+    background: #ffffff;
+  }
+}
+/* UI_REFRESH_END */

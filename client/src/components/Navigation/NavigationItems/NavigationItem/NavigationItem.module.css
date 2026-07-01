@@ -1,14 +1,26 @@
 .Normal {
-    color: #ffffff;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
 .Normal:hover {
-    text-decoration: underline;
-    transition: 100ms;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .Selected {
-    color: #ffffff;
-    text-decoration: underline;
+  background: #ffffff;
+  color: var(--color-primary-dark);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
 }

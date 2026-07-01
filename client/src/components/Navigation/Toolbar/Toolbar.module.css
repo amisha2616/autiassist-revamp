@@ -1,36 +1,41 @@
 .Toolbar {
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    height: 56px;
-    background-color: #245953;
-    z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--toolbar-height);
+  background: rgba(13, 63, 67, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 10px 30px rgba(9, 36, 39, 0.18);
+  backdrop-filter: blur(14px);
+  z-index: 200;
 }
 
 .Toolbar__Navigation {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 1rem 0 1rem;
+  width: 100%;
+  max-width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(12px, 3vw, 28px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .Toolbar__Logo {
-    margin-left: 1rem;
+  flex: 0 0 auto;
 }
 
 .Toolbar__Logo a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
 }
 
 .Spacer {
-    flex: 1;
-}
-
-@media (min-width: 769px) {
-    .Toolbar__Logo {
-        margin-left: 0;
-    }
+  flex: 1 1 auto;
+  min-width: 8px;
 }

@@ -298,3 +298,26 @@
         gap: 6px;
     }
 }
+
+
+/* UI_REFRESH_START */
+.BarTrack {
+  background: var(--color-primary-soft);
+}
+
+.BarFill {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.ScorePill,
+.MetricGrid span,
+.Pill {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+
+.DeleteButton {
+  border-radius: 999px;
+  background: var(--color-danger);
+}
+/* UI_REFRESH_END */

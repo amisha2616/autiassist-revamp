@@ -1,22 +1,22 @@
 .ToggleButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .ToggleButton:focus {
-    outline: none;
+  outline: none;
 }
 
-@media (min-width: 769px) {
-    .ToggleButton {
-        display: none;
-    }
+@media (min-width: 1181px) {
+  .ToggleButton {
+    display: none;
+  }
 }

@@ -1,83 +1,91 @@
 .Page {
-    min-height: calc(100vh - 56px);
-    padding: 96px 16px 48px;
-    background: #20262f;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  min-height: calc(100vh - var(--toolbar-height));
+  padding: calc(var(--toolbar-height) + 54px) 16px 48px;
+  background: radial-gradient(circle at top left, rgba(19, 92, 95, 0.16), transparent 28rem), var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .Card {
-    width: 100%;
-    max-width: 440px;
-    background: #ffffff;
-    color: #20262f;
-    border-radius: 12px;
-    padding: 28px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 460px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 4vw, 34px);
+  box-shadow: var(--shadow-md);
 }
 
 .Card h1 {
-    margin: 0 0 8px;
-    color: #144C52;
+  margin: 0 0 8px;
+  color: var(--color-heading);
+  font-size: 2.1rem;
+  letter-spacing: -0.035em;
 }
 
 .HelpText {
-    margin: 0 0 22px;
-    line-height: 1.5;
-    color: #4c5965;
+  margin: 0 0 24px;
+  line-height: 1.6;
+  color: var(--color-text-soft);
 }
 
 .Form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 700;
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 900;
+  color: var(--color-heading);
 }
 
 .Form input {
-    width: 100%;
-    box-sizing: border-box;
-    height: 40px;
-    margin-bottom: 16px;
-    border: 1px solid #cbd5dd;
-    border-radius: 6px;
-    padding: 0 10px;
-    font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 46px;
+  margin-bottom: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0 13px;
+  font-size: 15px;
+  background: var(--color-surface-muted);
+  color: var(--color-text);
 }
 
 .Button {
-    width: 100%;
-    min-height: 42px;
-    border: 0;
-    border-radius: 6px;
-    background: #144C52;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(13, 63, 67, 0.18);
 }
 
 .Button:disabled {
-    opacity: 0.65;
-    cursor: not-allowed;
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .Error {
-    background: #ffe9ef;
-    color: #b0002f;
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 16px;
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  font-weight: 800;
 }
 
 .FooterText {
-    margin-top: 18px;
-    text-align: center;
-    color: #4c5965;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--color-text-soft);
 }
 
 .FooterText a {
-    color: #144C52;
-    font-weight: 700;
+  color: var(--color-primary);
+  font-weight: 900;
 }

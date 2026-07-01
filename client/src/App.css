@@ -1,5 +1,7 @@
-.Main {
-  top: 56px;
-  height: 100%;
+.App {
+  min-height: 100vh;
 }
 
+.Main {
+  min-height: 100vh;
+}

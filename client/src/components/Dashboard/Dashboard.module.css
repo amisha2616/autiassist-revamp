@@ -1,78 +1,91 @@
 .Page {
-    min-height: calc(100vh - 56px);
-    padding: 96px 32px 48px;
-    background: #20262f;
-    color: #ffffff;
+  min-height: calc(100vh - var(--toolbar-height));
+  padding: calc(var(--toolbar-height) + 44px) clamp(16px, 4vw, 40px) 56px;
+  background: radial-gradient(circle at top right, rgba(19, 92, 95, 0.16), transparent 28rem), var(--color-bg);
+  color: var(--color-text);
 }
 
 .Header {
-    max-width: 1040px;
-    margin: 0 auto 24px;
+  max-width: var(--page-width);
+  margin: 0 auto 26px;
 }
 
 .Header h1 {
-    margin: 0 0 8px;
-    font-size: 36px;
+  margin: 0 0 10px;
+  color: var(--color-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
 }
 
 .Header p {
-    margin: 0;
-    color: #d6e4e2;
-    line-height: 1.5;
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-text-soft);
+  line-height: 1.65;
 }
 
 .RoleBadge {
-    display: inline-block;
-    margin-top: 14px;
-    padding: 6px 12px;
-    border-radius: 999px;
-    background: #144C52;
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-weight: 900;
+  text-transform: capitalize;
 }
 
 .Grid {
-    max-width: 1040px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 18px;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 18px;
 }
 
 .Card {
-    background: #ffffff;
-    color: #20262f;
-    border-radius: 12px;
-    padding: 22px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.Card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .Card h2 {
-    margin: 0 0 8px;
-    color: #144C52;
+  margin: 0 0 10px;
+  color: var(--color-heading);
 }
 
 .Card p {
-    margin: 0 0 18px;
-    line-height: 1.5;
-    color: #4c5965;
+  margin: 0 0 18px;
+  line-height: 1.55;
+  color: var(--color-text-soft);
 }
 
 .Card a,
 .Card button {
-    display: inline-block;
-    border: 0;
-    border-radius: 6px;
-    background: #144C52;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 10px 14px;
-    cursor: pointer;
-    font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .SecondaryButton {
-    background: #f00946 !important;
+  background: var(--color-danger) !important;
 }

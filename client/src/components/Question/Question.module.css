@@ -1,9 +1,27 @@
 .QuestionFile {
-    height: 250px;
-    width: 250px;
+  width: min(780px, calc(100% - 24px));
+  margin: 0 auto 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: clamp(18px, 4vw, 28px);
+  overflow: hidden;
+  color: var(--color-text);
 }
 
-.QuestionFile div{
-    height: auto !important;
-    width: 100% !important;
+.QuestionFile h1,
+.QuestionFile h2,
+.QuestionFile h3,
+.QuestionFile p {
+  color: var(--color-text);
+}
+
+.QuestionFile img,
+.QuestionFile video {
+  display: block;
+  max-height: 360px;
+  object-fit: contain;
+  margin: 0 auto 18px;
+  border-radius: var(--radius-md);
 }

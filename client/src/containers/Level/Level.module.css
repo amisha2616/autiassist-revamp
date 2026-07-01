@@ -1,70 +1,72 @@
 .Container {
-    min-height: calc(100vh - 56px);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 80px 16px 32px;
-    z-index: 300;
+  min-height: calc(100vh - var(--toolbar-height));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: calc(var(--toolbar-height) + 24px) 16px 36px;
+  background: var(--color-bg);
 }
 
 .LoaderWrapper {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .ProfileSelector,
 .AttemptNotice,
 .MessageBox {
-    width: min(760px, calc(100% - 24px));
-    box-sizing: border-box;
-    margin: 0 auto 18px;
-    border-radius: 12px;
-    background: #ffffff;
-    color: #20262f;
-    padding: 14px 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  width: min(780px, calc(100% - 24px));
+  box-sizing: border-box;
+  margin: 0 auto 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-sm);
 }
 
 .ProfileSelector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .ProfileSelector label {
-    font-weight: 700;
-    color: #144C52;
+  font-weight: 900;
+  color: var(--color-heading);
 }
 
 .ProfileSelector select {
-    min-width: 220px;
-    border: 1px solid #ADD2C9;
-    border-radius: 8px;
-    padding: 10px 12px;
-    font-size: 15px;
+  min-width: min(100%, 240px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  padding: 10px 12px;
+  font-size: 15px;
 }
 
 .ProfileSelector p {
-    width: 100%;
-    margin: 6px 0 0;
-    text-align: center;
-    color: #7a4a00;
+  width: 100%;
+  margin: 6px 0 0;
+  text-align: center;
+  color: var(--color-warning);
 }
 
 .AttemptNotice {
-    text-align: center;
-    font-weight: 700;
+  text-align: center;
+  font-weight: 900;
 }
 
 .MessageBox {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
 }

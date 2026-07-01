@@ -14,9 +14,9 @@ const sideDrawer = props => {
             {auth => (
                 <nav className={drawerClasses.join(' ')}>
                     <ul>
-                        <NavigationItem link="/levels">Quiz</NavigationItem>
+                        <NavigationItem link="/levels">Games</NavigationItem>
                         <NavigationItem link="/camera">Live Observation</NavigationItem>
-                        <NavigationItem link={auth.user ? "/screening/new" : "/questionarie"}>Screening Tool</NavigationItem>
+                        <NavigationItem link={auth.user ? "/screening/new" : "/questionarie"}>Screening</NavigationItem>
                         {auth.user ? <NavigationItem link="/profiles">Profiles</NavigationItem> : null}
                         {auth.user ? <NavigationItem link="/game-progress">Progress</NavigationItem> : null}
                         {auth.user ? <NavigationItem link="/wellbeing">Wellbeing</NavigationItem> : null}

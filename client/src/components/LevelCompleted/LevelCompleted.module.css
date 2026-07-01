@@ -1,179 +1,68 @@
 .LevelCompleted {
-    margin-top: 56px;
+  width: min(780px, calc(100% - 24px));
+  margin: 0 auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: clamp(22px, 4vw, 34px);
+  color: var(--color-text);
+  text-align: center;
 }
 
 .LevelCompleteHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    width: auto;
-    color: #000000;
-    background-color: #ADD2C9;
-    padding: 20px;
+  color: var(--color-heading);
+  margin: 0 0 18px;
 }
 
-.StarsContainer, .ButtonsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.StarsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0 18px;
 }
 
-.Star1 img, .Star2 img, .Star3 img {
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    animation: zoomInOut 2s;
+.Star1,
+.Star2,
+.Star3 {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ButtonsContainer button {
-    margin: 20px 10px 10px 10px;
-}
-
-.ImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.ImageContainer img {
-    height: 320px;
-    width: 375px;
+.Star1 img,
+.Star2 img,
+.Star3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .ScoreContainer,
-.AccuracyContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 40px;
-}
-
-.AccuracyContainer {
-    margin-top: 8px;
-    font-size: 24px;
-    color: #144C52;
-    font-weight: 700;
-}
-
+.AccuracyContainer,
 .SaveNotice {
-    width: min(720px, calc(100% - 32px));
-    margin: 20px auto 0;
-    background: #ffffff;
-    color: #20262f;
-    border-radius: 12px;
-    padding: 14px 16px;
-    text-align: center;
-    font-weight: 700;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  margin: 12px auto;
+  color: var(--color-text-soft);
+  font-weight: 800;
 }
 
-.SaveNotice a {
-    color: #144C52;
-    text-decoration: underline;
+.ButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
 }
 
-@keyframes zoomInOut {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        transform: scale(1.2, 1.2);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
 }
 
-@media screen and (max-width: 768px) {
-    .LevelCompleteHeader {
-        font-size: 55px;
-    }
-    .Star1 img, .Star2 img, .Star3 img {
-        height: 90px;
-        width: 90px;
-        margin: 10px;
-    }
-    .ScoreContainer {
-        font-size: 35px;
-    }
-    .ImageContainer img {
-        height: 280px;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .LevelCompleteHeader {
-        font-size: 65px;
-    }
-    .Star1 img, .Star2 img, .Star3 img {
-        height: 90px;
-        width: 90px;
-        margin: 10px;
-    }
-    .ScoreContainer {
-        font-size: 35px;
-    }
-    .ImageContainer img {
-        height: 175px;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .LevelCompleteHeader {
-        font-size: 55px;
-    }
-    .Star1 img, .Star2 img, .Star3 img {
-        height: 90px;
-        width: 90px;
-        margin: 10px;
-    }
-    .ScoreContainer {
-        font-size: 35px;
-    }
-    .ImageContainer img {
-        height: 200px;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .LevelCompleteHeader {
-        font-size: 45px;
-    }
-    .Star1 img, .Star2 img, .Star3 img {
-        height: 80px;
-        width: 80px;
-        margin: 10px;
-    }
-    .ScoreContainer {
-        font-size: 35px;
-    }
-    .ImageContainer img {
-        height: 230px;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .LevelCompleteHeader {
-        font-size: 45px;
-    }
-    .Star1 img, .Star2 img, .Star3 img {
-        height: 70px;
-        width: 70px;
-        margin: 10px;
-    }
-    .ScoreContainer {
-        font-size: 35px;
-    }
-    .ImageContainer img {
-        height: 240px;
-        width: 320px;
-    }
+.ImageContainer img {
+  max-height: 220px;
+  object-fit: contain;
 }

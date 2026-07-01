@@ -221,3 +221,27 @@
         text-align: left;
     }
 }
+
+
+/* UI_REFRESH_START */
+.Header a,
+.EmptyState a {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.BarTrack {
+  background: var(--color-primary-soft);
+}
+
+.BarFill {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.AttemptCard,
+.LevelCard,
+.ListRow,
+.SummaryCard {
+  border-color: var(--color-border);
+}
+/* UI_REFRESH_END */

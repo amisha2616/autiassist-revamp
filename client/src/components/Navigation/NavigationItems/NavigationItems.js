@@ -8,15 +8,14 @@ const navigationItems = props => (
         {auth => (
             <div className={classes.NavigationItems}>
                 <ul>
-                    <NavigationItem link="/levels">Quiz</NavigationItem>
-                    <NavigationItem link="/camera">Live Observation</NavigationItem>
-                    <NavigationItem link={auth.user ? "/screening/new" : "/questionarie"}>Screening Tool</NavigationItem>
+                    <NavigationItem link="/levels">Games</NavigationItem>
+                    <NavigationItem link="/camera">Observe</NavigationItem>
+                    <NavigationItem link={auth.user ? "/screening/new" : "/questionarie"}>Screening</NavigationItem>
                     {auth.user ? <NavigationItem link="/profiles">Profiles</NavigationItem> : null}
                     {auth.user ? <NavigationItem link="/game-progress">Progress</NavigationItem> : null}
                     {auth.user ? <NavigationItem link="/wellbeing">Wellbeing</NavigationItem> : null}
                     {auth.user ? <NavigationItem link="/reports">Reports</NavigationItem> : null}
                     <NavigationItem link="/blog">Blog</NavigationItem>
-
                     {auth.user ? <NavigationItem link="/dashboard">Dashboard</NavigationItem> : null}
                     {auth.user && auth.user.role === 'admin' ? <NavigationItem link="/upload">Admin</NavigationItem> : null}
                     {!auth.user ? <NavigationItem link="/login">Login</NavigationItem> : null}
