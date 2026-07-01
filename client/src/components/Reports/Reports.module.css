@@ -1,0 +1,421 @@
+.Page {
+    min-height: calc(100vh - 56px);
+    padding: 96px 32px 48px;
+    background: #20262f;
+    color: #ffffff;
+}
+
+.Header,
+.Controls,
+.Layout,
+.Alert,
+.EmptyState {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Header {
+    margin-bottom: 20px;
+}
+
+.Header h1,
+.EmptyState h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.Header p,
+.EmptyState p {
+    margin: 0;
+    color: #d6e4e2;
+    line-height: 1.5;
+}
+
+.Controls,
+.EmptyState {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+    margin-bottom: 18px;
+}
+
+.ControlGrid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 18px;
+    align-items: end;
+}
+
+.Controls label {
+    display: block;
+    color: #144C52;
+    font-weight: 800;
+}
+
+.Controls select,
+.Controls input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c6d5d2;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.FilterForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 12px;
+    align-items: end;
+}
+
+.FilterButtons,
+.ActionRow,
+.SavedReport div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ActionRow {
+    margin-top: 18px;
+}
+
+.Controls button,
+.Controls a,
+.EmptyState a,
+.SavedReport button {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    background: #144C52;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Controls button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 18px;
+    align-items: start;
+}
+
+.ReportPaper,
+.SavedReports {
+    background: #ffffff;
+    color: #20262f;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+}
+
+.ReportHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #e2ecea;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+.ReportHeader p {
+    margin: 0 0 8px;
+    color: #144C52;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.ReportHeader h1 {
+    margin: 0 0 8px;
+    color: #144C52;
+    font-size: 30px;
+}
+
+.ReportHeader span,
+.GeneratedBox small {
+    color: #4c5965;
+}
+
+.GeneratedBox {
+    text-align: right;
+    min-width: 150px;
+}
+
+.GeneratedBox strong {
+    display: block;
+    color: #144C52;
+    font-size: 18px;
+}
+
+.SummaryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.SummaryCard {
+    border: 1px solid #e2ecea;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.SummaryCard span,
+.SummaryCard small,
+.DetailGrid span,
+.ListRow span,
+.ListRow small,
+.LevelCard small {
+    display: block;
+    color: #4c5965;
+    font-size: 13px;
+}
+
+.SummaryCard strong {
+    display: block;
+    margin-top: 6px;
+    color: #144C52;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.ReportSection {
+    border-top: 1px solid #e2ecea;
+    padding-top: 22px;
+    margin-top: 22px;
+}
+
+.ReportSection h2 {
+    margin: 0 0 14px;
+    color: #144C52;
+}
+
+.ReportSection h3 {
+    color: #144C52;
+    margin: 16px 0 8px;
+}
+
+.ReportSection p {
+    color: #4c5965;
+    line-height: 1.55;
+}
+
+.DetailGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.DetailGrid div,
+.LevelCard,
+.NoteBox,
+.ListRow {
+    border: 1px solid #e2ecea;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.DetailGrid strong,
+.LevelCard strong {
+    display: block;
+    color: #144C52;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+
+.NoteBox {
+    background: #f5faf9;
+    margin-top: 14px;
+    color: #4c5965;
+}
+
+.HighlightRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.Band {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 7px 11px;
+    background: #e8efee;
+    color: #144C52;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.BandLow {
+    background: #e6f4ec;
+    color: #0c5f35;
+}
+
+.BandModerate {
+    background: #fff3d8;
+    color: #8a5a00;
+}
+
+.BandHigh {
+    background: #ffe5e5;
+    color: #9c1c1c;
+}
+
+.SmallList,
+.LevelGrid,
+.TwoColumnList {
+    margin-top: 16px;
+}
+
+.SmallList {
+    display: grid;
+    gap: 8px;
+}
+
+.ListRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.LevelGrid,
+.TwoColumnList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+}
+
+.LevelCard h3,
+.LevelCard p {
+    margin: 0 0 6px;
+}
+
+.Pill {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    border-radius: 999px;
+    background: #e8efee;
+    color: #144C52;
+    padding: 7px 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.Recommendations {
+    margin: 0;
+    padding-left: 22px;
+    color: #4c5965;
+    line-height: 1.6;
+}
+
+.Disclaimer {
+    background: #fff3d8;
+    border-radius: 10px;
+    padding: 14px;
+    color: #4c5965;
+    font-weight: 700;
+}
+
+.SavedReports h2 {
+    color: #144C52;
+    margin: 0 0 12px;
+}
+
+.SavedReports p {
+    color: #4c5965;
+    line-height: 1.4;
+}
+
+.SavedReport {
+    border: 1px solid #e2ecea;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.SavedReport h3 {
+    margin: 0 0 6px;
+    color: #144C52;
+}
+
+.SavedReport p {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.Alert {
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    color: #20262f;
+}
+
+.Error {
+    border-left: 5px solid #f00946;
+}
+
+.Success {
+    border-left: 5px solid #144C52;
+}
+
+.EmptyText {
+    color: #6b7884;
+}
+
+@media (max-width: 900px) {
+    .ControlGrid,
+    .FilterForm,
+    .Layout {
+        grid-template-columns: 1fr;
+    }
+
+    .ReportHeader {
+        display: block;
+    }
+
+    .GeneratedBox {
+        text-align: left;
+        margin-top: 12px;
+    }
+}
+
+@media print {
+    .NoPrint,
+    .SavedReports {
+        display: none !important;
+    }
+
+    .Page {
+        padding: 0;
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .Layout {
+        display: block;
+        max-width: none;
+        margin: 0;
+    }
+
+    .ReportPaper {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+    }
+}

@@ -25,6 +25,7 @@ import Profiles from './components/Profiles/Profiles';
 import Screening from './components/Screening/Screening';
 import GameProgress from './components/GameProgress/GameProgress';
 import Wellbeing from './components/Wellbeing/Wellbeing';
+import Reports from './components/Reports/Reports';
 import './App.css';
 
 class App extends Component {
@@ -70,6 +71,7 @@ class App extends Component {
                 <ProtectedRoute path="/screening/new" exact component={Screening} />
                 <ProtectedRoute path="/game-progress" exact component={GameProgress} />
                 <ProtectedRoute path="/wellbeing" exact component={Wellbeing} />
+                <ProtectedRoute path="/reports" exact component={Reports} />
                 <Route path="/levels" exact component={LevelScreen} />
                 <Route path="/level1" exact component={Level1} />
                 <Route path="/level2" exact component={Level2} />

@@ -55,6 +55,12 @@ class Dashboard extends Component {
                     </div>
 
                     <div className={classes.Card}>
+                        <h2>Review reports</h2>
+                        <p>Generate a print-ready summary from profiles, screening results, games, and wellbeing logs.</p>
+                        <Link to="/reports">Open reports</Link>
+                    </div>
+
+                    <div className={classes.Card}>
                         <h2>Screening support</h2>
                         <p>Use the caregiver questionnaire for a non-diagnostic risk summary.</p>
                         <Link to="/screening/new">Start saved screening</Link>

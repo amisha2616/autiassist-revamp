@@ -14,6 +14,7 @@ const navigationItems = props => (
                     {auth.user ? <NavigationItem link="/profiles">Profiles</NavigationItem> : null}
                     {auth.user ? <NavigationItem link="/game-progress">Progress</NavigationItem> : null}
                     {auth.user ? <NavigationItem link="/wellbeing">Wellbeing</NavigationItem> : null}
+                    {auth.user ? <NavigationItem link="/reports">Reports</NavigationItem> : null}
                     <NavigationItem link="/blog">Blog</NavigationItem>
 
                     {auth.user ? <NavigationItem link="/dashboard">Dashboard</NavigationItem> : null}
